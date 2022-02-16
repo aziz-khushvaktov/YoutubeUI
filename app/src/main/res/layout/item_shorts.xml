@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="270dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginLeft="12dp"
+            android:layout_width="150dp"
+            android:layout_height="250dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                        android:id="@+id/iv_shorts"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/cam_3"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        app:autoPlay="false"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="top|right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_more_vert_24"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_marginBottom="22dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DIY Toys | Satisfying And Relaxing | DIY Tiktok Compilation.."
+                        android:textSize="11sp"
+                        android:textColor="@color/white"
+                        android:textStyle="normal"
+                        android:layout_marginHorizontal="8dp"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="bottom|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24M views"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginBottom="8dp"
+                        />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="303dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="215dp">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/iv_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/im_5"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_mainProfile"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/im_me"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                app:shapeAppearanceOverlay="@style/circle"
+                />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Beauty of Existence - Heart Touching Nasheed"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19,210,251 views · Jul 1, 2016"
+                    android:textSize="12sp"
+                    android:textColor="#6C6C6C"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

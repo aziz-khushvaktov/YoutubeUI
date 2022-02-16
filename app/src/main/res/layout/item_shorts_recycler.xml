@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#90E4DFDF">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="57dp">
+
+        <ImageView
+            android:layout_marginLeft="13dp"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:src="@drawable/img"
+            />
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shorts"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BETA"
+            android:textSize="10dp"
+            android:textColor="#9D9D9D"
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerShorts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
